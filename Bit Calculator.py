@@ -27,6 +27,7 @@ def image():
     # This asks for the width and height of the image
     width = int(input("Please enter in the image width: "))
     height = int(input("Please enter in the image height: "))
+
     # This tells the user the bits required
     print(f"The bits required to process this are: {width * height * 24}")
 
@@ -36,6 +37,7 @@ def main():
         if option == "exit":
             print("Have a good day Thanks for playing!")
             break
+        # This determines the integer,text or image
         elif option == "integer":
             integers()
         elif option == "text":
@@ -43,6 +45,7 @@ def main():
         elif option == "image":
             image()
         else:
+            # If you don't choose any of the above this will show
             print("Error please enter in an integer, an image, some text or type 'exit' to exit")
 
 if __name__ == "__main__":
